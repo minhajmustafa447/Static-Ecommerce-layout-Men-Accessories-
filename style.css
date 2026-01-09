@@ -1,0 +1,120 @@
+.star{
+      /* Minimal custom styles to keep the layout elegant while using Bootstrap classes */
+    .subscribe-banner {
+      background-image: url("./assets/Untitled_design_1.webp");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #fffcfc;
+    }
+
+    /* dark overlay for legibility */
+    .subscribe-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(2px);
+    }
+
+    .subscribe-content {
+      position: relative; /* sits above overlay */
+      z-index: 2;
+    }
+
+    /* gentle card-ish container */
+    .subscribe-card {
+      background: rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 820px;
+      margin: 0 1rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .subscribe-heading {
+      letter-spacing: 0.6px;
+      font-weight: 700;
+    }
+
+    .subscribe-para {
+      opacity: 0.95;
+    }
+
+    /* input group tweaks for small screens */
+    @media (max-width: 575.98px) {
+      .input-group .btn {
+        width: 100%;
+      }
+      .input-group .form-control {
+        margin-bottom: .5rem;
+      }
+    }
+}
+ .feedback-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .feedback-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      animation: fadeUp 1s ease;
+    }
+
+    .feedback-img {
+      background-image: url("./assets/feedback.jpg");
+      background-size: cover;
+      background-position: center;
+      min-height: 100%;
+    }
+
+    .feedback-form {
+      padding: 40px;
+    }
+
+    .feedback-form h2 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .feedback-form p {
+      color: #6c757d;
+      margin-bottom: 25px;
+    }
+
+    .form-control {
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .btn-submit {
+      border-radius: 30px;
+      padding: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .top-bar-right a i {
+  color: #ffffff;
+    }
+    .top-bar-right a i:hover {
+  color: #cccccc; /* light gray on hover */
+    }
